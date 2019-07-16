@@ -13,6 +13,7 @@
     "faker": "^4.1.0"
   },
   "devDependencies": {
-    "@types/faker": "^4.1.5"
+    "@types/faker": "^4.1.5",
+    "typescript": "^3.5.3"
   }
 }
