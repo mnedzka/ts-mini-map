@@ -16,7 +16,6 @@ export class LinkedList {
     }
 
     let tail = this.head;
-
     while (tail.next) {
       tail = tail.next;
     }
@@ -46,7 +45,6 @@ export class LinkedList {
 
     let counter = 0;
     let node: Node | null = this.head;
-
     while (node) {
       if (counter === index) {
         return node;
@@ -73,16 +71,15 @@ export class LinkedList {
 
     const leftHand = leftNode.data;
     leftNode.data = rightNode.data;
-    rightNode.data - leftHand;
+    rightNode.data = leftHand;
   }
 
-  print() {
+  print(): void {
     if (!this.head) {
       return;
     }
 
     let node: Node | null = this.head;
-
     while (node) {
       console.log(node.data);
       node = node.next;
