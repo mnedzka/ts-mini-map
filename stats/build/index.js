@@ -8,7 +8,7 @@ var matches = fs_1.default
     .readFileSync('football.csv', {
     encoding: 'utf-8',
 })
-    .split('./n')
+    .split('\n')
     .map(function (row) {
     return row.split(',');
 });
