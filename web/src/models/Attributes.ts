@@ -1,7 +1,7 @@
 export class Attributes<T> {
   constructor(private data: T) {}
 
-  get(propName: string): number | string | boolean {
+  get<K extends keyof T>(propName: K): T[K] {
     return this.data[propName];
   }
 
